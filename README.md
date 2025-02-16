@@ -10,6 +10,6 @@ This is a simple sidebar menu for a photography website, built using HTML, CSS, 
 
 ## 📂 Files
 - `index.html` - Main HTML file
-- `MiniProj1Prac.css` - Stylesheet for the sidebar
+- `style.css` - Stylesheet for the sidebar
 - `photo.jpg` - Image of Sidebar Menu
 - `README.md` - Documentation file
