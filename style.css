@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", serif;
+    /* overflow: hidden; */
+}
+
+#mainbox{
+    height: 100vh;
+ background-image: url(photo.jpg);  
+  background-size: cover; 
+}
+
+#btnone i{
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    position: absolute;
+    left: 16px;
+    line-height: 60px;
+    cursor: pointer;
+    transition: all 0.5s linear ;
+}
+
+.sidebar{
+    position: fixed;
+    left: -300px;
+    height: 100vh;
+    width: 300px;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 6px rgba(255, 255, 255, 0.5);
+    transition: all 0.5s linear ;
+}
+
+.sidebar #logo{
+    width: 100%;
+    position: absolute;
+    height: 60px;
+    line-height: 60px;
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.5);
+}
+
+.sidebar #logo a{
+    color: white;
+    position: absolute;
+    left: 50px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+} 
+
+.sidebar  #btntwo i{
+    color: grey;
+    font-size: 25px;
+    line-height: 60px;
+    position: absolute;
+    left: 270px;
+    opacity: 0;
+    cursor: pointer;
+    transition: all 0.5s linear ;
+}
+
+.sidebar .menu{
+   color: white;  
+   position: absolute;
+   width: 100%;
+   top: 80px;
+   
+} 
+
+.sidebar .menu li{
+    margin-top: 10px;
+    padding: 14px 20px;
+}
+
+.sidebar .menu i,a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+
+}
+.sidebar .menu i{
+    padding-right: 10px;
+}
+
+.sidebar .socialmedia{
+    color: white;
+    
+    position: absolute;
+    bottom: 50px;
+    left: 25%;
+}
+
+.sidebar .socialmedia i{
+    padding-right: 10px;
+    opacity: 0.5;
+    font-size: 20px;
+}
+#check{
+    display: none;
+}
+
+
+.sidebar .menu li:hover{
+    box-shadow: 0 0 4px rgba(255, 255, 255, 0.5);
+}
+  
+#btnone i:hover{
+    font-size: 40px;
+}
+
+#btntwo i:hover{
+    font-size: 30px;
+}
+
+
+.sidebar .socialmedia i:hover{
+    opacity: 1;
+    font-size: 22px;
+}
+
+#check:checked ~ .sidebar {
+  left: 0;
+}
+
+ #check:checked ~ #btnone i{
+    opacity: 0;
+}
+
+#check:checked ~ .sidebar  #btntwo i{
+    opacity: 1;
+} 
